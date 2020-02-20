@@ -79,7 +79,7 @@ public class RecursionLesson {
     public static void main(String[] args) {
         int ans = fibLoop(55);
         System.out.println(ans);
-        Systems.out.println(decToBin(152));
+        System.out.println(decToBin(152));
     }
     
 }
