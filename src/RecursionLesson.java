@@ -10,6 +10,20 @@
  */
 public class RecursionLesson {
 
+    // Decimal to Binary number converter
+    public static String decToBin(int n){
+        // the number 0 in decimal is also 0 in binary
+        if(n == 0){
+            return "0";
+        }
+        // get the quotient and remainder
+        int q = n/2;
+        int r = n%2;
+        // do the recursive call on quotient and add it to the remainder
+        // this "reads it backwards"
+        return decToBin(q) + r;
+    }
+    
     // gives the sum of the elements of an array of a given length
     public static int arraySum(int[] a, int length){
         // base case: no more elements in the array
@@ -65,6 +79,7 @@ public class RecursionLesson {
     public static void main(String[] args) {
         int ans = fibLoop(55);
         System.out.println(ans);
+        Systems.out.println(decToBin(152));
     }
     
 }
