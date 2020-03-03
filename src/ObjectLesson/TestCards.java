@@ -30,6 +30,19 @@ public class TestCards {
         c1.flipCard();
         System.out.println(c1.isFaceUp());
         System.out.println(c2.isFaceUp());
+        System.out.println("");
+        System.out.println("");
+        DeckOfCards d1 = new DeckOfCards();
+        DeckOfCards d2 = new DeckOfCards();
+        d2.shuffle();
+        // burn first card
+        d1.dealCard();
+        d2.dealCard();
+        // grab card 2
+        Card card1 = d1.dealCard();
+        Card card2 = d2.dealCard();
+        System.out.println("Rank: C1 - " + card1.getRank());
+        System.out.println("Rank: C2 - " + card2.getRank());
     }
     
 }
