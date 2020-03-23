@@ -9,7 +9,8 @@
  * @author lamon
  */
 public class MazeSolver {
-
+// I made a commet
+    
     public static void printMaze(char[][] map){
         // for each row
         for(int i = 0; i < map.length; i++){
